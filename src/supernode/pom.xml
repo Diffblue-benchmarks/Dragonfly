@@ -119,6 +119,13 @@
         </dependency>
 
         <!-- test end -->
+        <dependency>
+      <groupId>org.jacoco</groupId>
+      <artifactId>org.jacoco.agent</artifactId>
+      <version>0.8.2</version>
+      <scope>test</scope>
+      <classifier>runtime</classifier>
+    </dependency>
     </dependencies>
 
     <build>
