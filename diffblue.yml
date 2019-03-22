@@ -1,5 +1,6 @@
 buildCmd: cd src/supernode; mvn compile
 testCmd: cd src/supernode; mvn test
+skipVerification: true
 cbmcArguments:
 phases:
 -
