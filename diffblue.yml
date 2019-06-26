@@ -67,6 +67,7 @@ phases:
       throw-runtime-exceptions: true
       unwind: false
   - timeout: 150
+    staticValuesJson: false
     cbmcArguments:
       classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
       depth: 1500
@@ -78,6 +79,7 @@ phases:
       throw-runtime-exceptions: false
       unwind: 1
   - timeout: 150
+    staticValuesJson: false
     cbmcArguments:
       classpath: '/tools/cbmc/models.jar:.'
       depth: 3000
@@ -89,6 +91,7 @@ phases:
       throw-runtime-exceptions: true
       unwind: 3
   - timeout: 150
+    staticValuesJson: false
     cbmcArguments:
       classpath: '/tools/cbmc/models.jar:.'
       depth: 3000
@@ -100,6 +103,7 @@ phases:
       throw-runtime-exceptions: false
       unwind: 15
   - timeout: 150
+    staticValuesJson: false
     cbmcArguments:
       classpath: '/tools/cbmc/models-simple-overlay.jar:/tools/cbmc/models.jar:.'
       depth: 1500
@@ -111,6 +115,7 @@ phases:
       throw-runtime-exceptions: false
       unwind: 1
   - timeout: 150
+    staticValuesJson: false
     cbmcArguments:
       classpath: '/tools/cbmc/models.jar:.'
       depth: 3000
