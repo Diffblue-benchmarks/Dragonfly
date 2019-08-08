@@ -8,5 +8,7 @@
 # merging a custom yml file on top of this one using the script
 # in dashboard/scripts/update-diffblue-yml. Any options specified here would
 # be overriden to keep consistency with other benchmarks.
-buildCmd: cd src/supernode; mvn compile
+# mvn -X adds debugging info to the build output which is necessary to build
+# the classpath.
+buildCmd: cd src/supernode; mvn -e -X -Dmaven.test.skip=true compile
 testCmd: cd src/supernode; mvn test
