@@ -4,7 +4,6 @@
 buildCmd: cd src/supernode; mvn -e -X -Dmaven.test.skip=true compile
 testCmd: cd src/supernode; mvn test
 skipVerification: true
-staticValuesJson: true
 cbmcArguments:
   java-max-vla-length: 100000
   depth: false
