@@ -1,5 +1,5 @@
 # This file contains configuration for Diffblue Cover that is specific for
-# this project, typically a custom buildCmd, testCmd, classpathCmd and
+# this project, typically a custom buildCmd, classpathCmd and
 # java-version (as a CBMC argument).
 #
 # Other general options such as skipVerification, ignoreExistingCoverage, CBMC
@@ -11,4 +11,3 @@
 # mvn -X adds debugging info to the build output which is necessary to build
 # the classpath.
 buildCmd: cd src/supernode; mvn -e -X -Dmaven.test.skip=true compile
-testCmd: cd src/supernode; mvn test
